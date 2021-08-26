@@ -1,0 +1,68 @@
+#! /usr/local/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/lib/ivl/v2009.vpi";
+S_0x55e5a490bd90 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x55e5a490bf20 .scope module, "sillyfunction" "sillyfunction" 3 2;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /OUTPUT 1 "y";
+o0x7fef1f0b9288 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x55e5a4957e80 .functor NOT 1, o0x7fef1f0b9288, C4<0>, C4<0>, C4<0>;
+o0x7fef1f0b92b8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x55e5a4957f40 .functor NOT 1, o0x7fef1f0b92b8, C4<0>, C4<0>, C4<0>;
+L_0x55e5a4958010 .functor AND 1, L_0x55e5a4957e80, L_0x55e5a4957f40, C4<1>, C4<1>;
+o0x7fef1f0b92e8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x55e5a4958100 .functor NOT 1, o0x7fef1f0b92e8, C4<0>, C4<0>, C4<0>;
+L_0x55e5a49581a0 .functor AND 1, L_0x55e5a4958010, L_0x55e5a4958100, C4<1>, C4<1>;
+L_0x55e5a49582e0 .functor NOT 1, o0x7fef1f0b92b8, C4<0>, C4<0>, C4<0>;
+L_0x55e5a49583e0 .functor AND 1, o0x7fef1f0b9288, L_0x55e5a49582e0, C4<1>, C4<1>;
+L_0x55e5a49584f0 .functor NOT 1, o0x7fef1f0b92e8, C4<0>, C4<0>, C4<0>;
+L_0x55e5a4958600 .functor AND 1, L_0x55e5a49583e0, L_0x55e5a49584f0, C4<1>, C4<1>;
+L_0x55e5a4958710 .functor OR 1, L_0x55e5a49581a0, L_0x55e5a4958600, C4<0>, C4<0>;
+L_0x55e5a4958880 .functor NOT 1, o0x7fef1f0b92b8, C4<0>, C4<0>, C4<0>;
+L_0x55e5a49588f0 .functor AND 1, o0x7fef1f0b9288, L_0x55e5a4958880, C4<1>, C4<1>;
+L_0x55e5a49589d0 .functor AND 1, L_0x55e5a49588f0, o0x7fef1f0b92e8, C4<1>, C4<1>;
+L_0x55e5a4958a90 .functor OR 1, L_0x55e5a4958710, L_0x55e5a49589d0, C4<0>, C4<0>;
+v0x55e5a4944f70_0 .net *"_ivl_0", 0 0, L_0x55e5a4957e80;  1 drivers
+v0x55e5a49570a0_0 .net *"_ivl_10", 0 0, L_0x55e5a49582e0;  1 drivers
+v0x55e5a4957180_0 .net *"_ivl_12", 0 0, L_0x55e5a49583e0;  1 drivers
+v0x55e5a4957240_0 .net *"_ivl_14", 0 0, L_0x55e5a49584f0;  1 drivers
+v0x55e5a4957320_0 .net *"_ivl_16", 0 0, L_0x55e5a4958600;  1 drivers
+v0x55e5a4957400_0 .net *"_ivl_18", 0 0, L_0x55e5a4958710;  1 drivers
+v0x55e5a49574e0_0 .net *"_ivl_2", 0 0, L_0x55e5a4957f40;  1 drivers
+v0x55e5a49575c0_0 .net *"_ivl_20", 0 0, L_0x55e5a4958880;  1 drivers
+v0x55e5a49576a0_0 .net *"_ivl_22", 0 0, L_0x55e5a49588f0;  1 drivers
+v0x55e5a4957780_0 .net *"_ivl_24", 0 0, L_0x55e5a49589d0;  1 drivers
+v0x55e5a4957860_0 .net *"_ivl_4", 0 0, L_0x55e5a4958010;  1 drivers
+v0x55e5a4957940_0 .net *"_ivl_6", 0 0, L_0x55e5a4958100;  1 drivers
+v0x55e5a4957a20_0 .net *"_ivl_8", 0 0, L_0x55e5a49581a0;  1 drivers
+v0x55e5a4957b00_0 .net "a", 0 0, o0x7fef1f0b9288;  0 drivers
+v0x55e5a4957bc0_0 .net "b", 0 0, o0x7fef1f0b92b8;  0 drivers
+v0x55e5a4957c80_0 .net "c", 0 0, o0x7fef1f0b92e8;  0 drivers
+v0x55e5a4957d40_0 .net "y", 0 0, L_0x55e5a4958a90;  1 drivers
+S_0x55e5a4944de0 .scope module, "dump" "dump" 4 1;
+ .timescale -9 -12;
+    .scope S_0x55e5a4944de0;
+T_0 ;
+    %vpi_call/w 4 3 "$dumpfile", "sillyfunction.vcd" {0 0 0};
+    %vpi_call/w 4 4 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55e5a490bf20 {0 0 0};
+    %delay 1000, 0;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "src/sillyfunction.sv";
+    "utils/dump_sillyfunction.sv";

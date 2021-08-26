@@ -1,0 +1,42 @@
+$date
+	Wed Aug 25 20:01:38 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module sillyfunction $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 1 # c $end
+$var wire 1 $ y $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1$
+1#
+0"
+1!
+$end
+#2001
+1$
+0#
+#4001
+1#
+#6001
+1$
+0!
+0#
+#8001
+1!
+1#
+#10001
+0$
+1"
+#16001
+0!
+0#
+#18002

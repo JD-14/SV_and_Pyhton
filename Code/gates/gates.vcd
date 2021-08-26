@@ -1,0 +1,134 @@
+$date
+	Wed Aug 25 20:41:50 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module gates $end
+$var wire 2 ! a [1:0] $end
+$var wire 2 " b [1:0] $end
+$var wire 2 # y1 [1:0] $end
+$var wire 2 $ y2 [1:0] $end
+$var wire 2 % y3 [1:0] $end
+$var wire 2 & y4 [1:0] $end
+$var wire 2 ' y5 [1:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 '
+b1 &
+b0 %
+b10 $
+b10 #
+b10 "
+b10 !
+$end
+#2001
+b10 &
+b10 '
+b1 #
+b1 $
+b1 !
+b1 "
+#4001
+b11 &
+b0 '
+b0 #
+b11 $
+b11 %
+b10 !
+#6001
+b1 &
+b10 #
+b1 %
+b11 !
+b10 "
+#10001
+b10 !
+b11 "
+#12001
+b11 &
+b10 '
+b0 #
+b1 $
+b0 !
+b1 "
+#14001
+b1 '
+b10 $
+b10 %
+b10 !
+b0 "
+#16001
+b0 '
+b11 $
+b11 %
+b0 !
+b11 "
+#18001
+b10 '
+b1 $
+b1 %
+b1 "
+#20001
+b11 '
+b0 $
+b0 %
+b0 "
+#22001
+b0 '
+b11 $
+b11 %
+b10 !
+b1 "
+#24001
+b10 &
+b1 #
+b10 %
+b1 !
+b11 "
+#26001
+b11 &
+b1 '
+b0 #
+b10 $
+b10 !
+b0 "
+#28001
+b10 '
+b1 $
+b1 %
+b1 !
+#30001
+b1 '
+b10 $
+b10 %
+b0 !
+b10 "
+#34001
+b1 &
+b0 '
+b10 #
+b11 $
+b1 %
+b11 !
+#36001
+b11 &
+b10 '
+b0 #
+b1 $
+b1 !
+b0 "
+#40001
+b0 &
+b0 '
+b11 #
+b11 $
+b0 %
+b11 !
+b11 "
+#42002
