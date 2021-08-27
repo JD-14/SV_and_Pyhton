@@ -5,4 +5,11 @@ This repository covers seven examples of Hardware Description Language (HDL). Th
 # List of Examples:
   1. [Combinational Logic](https://github.com/JD-14/SV_and_Pyhton/tree/main/Code)
   2. [Logic Gates](https://github.com/JD-14/SV_and_Pyhton/tree/main/Code/gates)
+  3. [Full Adder](https://github.com/JD-14/SV_and_Pyhton/tree/main/Code/fulladder)
+  4. [Register](https://github.com/JD-14/SV_and_Pyhton/tree/main/Code/flop)
+  5. Resettable Register:
+      1. [Synchronous]
+      2. [Asynchronous]
+  7. [Full Adder (Using Nonblocking Assignments)](https://github.com/JD-14/SV_and_Pyhton/tree/main/Code/fulladder2)
+  8. [History FSM (Finite State Machine)](https://github.com/JD-14/SV_and_Pyhton/tree/main/Code/historyFSM)
 
