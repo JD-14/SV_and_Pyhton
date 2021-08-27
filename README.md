@@ -16,11 +16,13 @@ This repository covers seven examples of Hardware Description Language (HDL). Th
 
 # Brief Intro to SystemVerilog
   - Modules:
-    - a.	A block of hardware with inputs and outputs is called a module. A module always begins with the word “module”, followed by the given name of the module and its list of the inputs and outputs. Moreover, the list of inputs and outputs are also known as ports. The middle of the module contains the description of a desired functionality. There are two styles for describing a module functionality. These styles are behavioral and structural. Finally, a module is always ended with the statement “endmodule”. 
+    - A block of hardware with inputs and outputs is called a module. A module always begins with the word “module”, followed by the given name of the module and its list of the inputs and outputs. Moreover, the list of inputs and outputs are also known as ports. The middle of the module contains the description of a desired functionality. There are two styles for describing a module functionality. These styles are behavioral and structural. Finally, a module is always ended with the statement “endmodule”. 
+    
+    - The image below is an example of a module. The module's name is “sillyfunction” and the ports are a, b, c, and y. Moreover, notice how the “input” statement defines ports a, b, and c as inputs., the “output” statement defines port y as output, and "wire" is used to read the output value. Next, the “assign” statement describes the module functionality. This functionality will be cover in detail later in the report. Finally, the module ends with the statement “endmodeule”.
 
 
 # References
   - cocotb:
       - [Documentation](https://docs.cocotb.org/en/stable/index.html)
       - [Github](https://github.com/cocotb/cocotb/tree/ec99a877ee774c33e702391d744fdacb4c87850a)
-      - [HDL](http://pages.hmc.edu/harris/cmosvlsi/4e/cmosvlsidesign_4e_App.pdf)
+  - [HDL Intro](http://pages.hmc.edu/harris/cmosvlsi/4e/cmosvlsidesign_4e_App.pdf)
