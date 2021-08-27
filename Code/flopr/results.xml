@@ -1,6 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1629947617" />
-    <testcase name="flopr_random_tb" classname="test_flopr" file="/home/jd14/Desktop/vlsi/vlsi-cad/1_RTL_Design/sysver_work/flopr/test/test_flopr.py" lineno="8" time="0.009168386459350586" sim_time_ns="195.001" ratio_time="21268.846035730076" />
-  </testsuite>
-</testsuites>
