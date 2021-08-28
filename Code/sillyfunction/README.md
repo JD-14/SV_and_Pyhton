@@ -71,3 +71,5 @@ async def silly_random_tb(dut):
 ```
 
 ## Results
+
+![img8](/Images/img8.png)
