@@ -15,10 +15,10 @@ This repository covers seven examples of Hardware Description Language (HDL). Th
 
 
 # Brief Intro to SystemVerilog
-### 1) Modules:
+## 1) Modules:
 A block of hardware with inputs and outputs is called a module. A module always begins with the word “module”, followed by the given name of the module and its list of the inputs and outputs. Moreover, the list of inputs and outputs are also known as ports. The middle of the module contains the description of a desired functionality. There are two styles for describing a module functionality. These styles are behavioral and structural. Finally, a module is always ended with the statement “endmodule”.
     
-   > The image below is an example of a module. The module's name is “sillyfunction” and the ports are a, b, c, and y. Moreover, notice how the “input” statement defines ports a, b, and c as inputs., the “output” statement defines port y as output, and "wire" is used to read the output value. Next, the “assign” statement describes the module functionality. This functionality will be cover in detail later in the report. Finally, the module ends with the statement “endmodeule”.
+> The image below is an example of a module. The module's name is “sillyfunction” and the ports are a, b, c, and y. Moreover, notice how the “input” statement defines ports a, b, and c as inputs., the “output” statement defines port y as output, and "wire" is used to read the output value. Next, the “assign” statement describes the module functionality. This functionality will be cover in detail later in the report. Finally, the module ends with the statement “endmodeule”.
 >
 > ![img](/Images/img1.png)
 
@@ -33,13 +33,30 @@ A block of hardware with inputs and outputs is called a module. A module always 
       >
       > ![img](/Images/img3.png)
 
-#
-### 2) Operator precedence:
+## 2) Operator precedence:
 Just like in any other programming language, SystemVerilog has arithmetic, shift, and comparison operators. Moreover, the operators have precedence. The image below shows the operators and their precedence.
 
 ![img](/Images/img4.png)
 
 
+## 3) Numbers:
+In SystemVerilog, there is a simple way to define number values. This method is useful when working with large-bit buses. The format for declaring a number value is “N’Bvalue”, where N is the size in bits, B is the base, and “value” gives the value. For example, “3’b101” indicates a 3-bit number with a binary value of 101. There are multiple base options to declare a value, ‘b for binary (base 2), ‘o for octal (base 8), ‘d for decimal (base 10), and ‘h for hexadecimal (base 16).  Moreover, the defaults base is decimal. Furthermore, if a declared value doesn’t match the bit size (or size is omitted), zeros are automatically padded on the front of the value. For example, “ ’b11” gives the value 0000…011.  Finally, A useful shortcut to fill the value with all 0s or 1s is to use the declaration ‘0 or ‘1, respectively. The image below shows more examples of number declarations.
+
+![img](/Images/img5.png)
+
+
+## 4) Zs and Xs (signal values):
+SystemVerilog uses “z” to indicate a floating value (represents an open circuit). The “x” value is used to indicate an invalid logic level (bug or error). Moreover, a gate that receives a floating input (z) may produce an x output when it can’t determine the correct output value. The image below shows the truth table of an AND gate with all possible combinations of z and x.
+
+![img](/Images/img6.png)
+
+
+## 5) Testbench
+A testbench is a module used to test another module. The tested module is called the Device Under Test (DUT). Using a series of desired input patterns called test vectors are used to generate an output. Then the outputs/results are inspected to verify if the correct outputs were produced.  
+
+>The image below shows a sample testbench for the “ANDgate” module. The first line indicates the value of each time unit (timescale). The format is “ ‘time-scale unit / step ”. In this case, each unit is 1ns, and the simulation has 1ns resolution. The second line marks the beginning of the module. The third and fourth lines define the input (reg) and output (wire) ports. The sixth and seventh line mark the beginning of the simulation. The seventh line creates files that stores the results from the simulation. The eighth line creates a file with all the variables use during the simulation. Lines 9-24 show the 8 possible input patterns use during the simulation. Moreover the “#” symbol is used to indicate a delay of 10ns between each pattern. Line 27 indicates that after the 10ns the simulation stops. Line 27 terminates the simulation. Line 28 marks the end of the simulation. Line 30 is the device under test (ANDgate). Finally, line 31 marks the end of the module.
+> 
+> ![img](/Images/img7.png)
 
 
 # References
