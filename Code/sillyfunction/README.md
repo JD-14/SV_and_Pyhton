@@ -43,7 +43,7 @@ This testbench feeds random inputs (0 or 1) to the device every 2ns. The for-loo
 input procedure 8 times.  Moreover, the python function is called with the same inputs 
 (arguments) as the dut. The last part of the code uses an assert statement to evaluate if the 
 output from the python and SV are the same. If the output is not the same, then the test will 
-fail and display a predefined message.
+fail and display a predefined message. Important note, cocotb takes in decimal values and converts a decimal to binary and vice versa.
 
 ```python
 import cocotb
