@@ -1,8 +1,6 @@
 import cocotb
-from cocotb.clock import Clock
 from cocotb.triggers import Timer
 from model.fulladder_model import fulladder
-from cocotb.triggers import RisingEdge, FallingEdge, ClockCycles
 import random
 
 @cocotb.test()
@@ -25,7 +23,7 @@ async def fulladder_constant_tb(dut):
                                     f"Python cout is : {pcout}"
 
 @cocotb.test()
-async def fulladder_tb(dut):
+async def fulladder_random_tb(dut):
     for i in range(20):
         a = random.randint(0, 1)
         b = random.randint(0, 1)

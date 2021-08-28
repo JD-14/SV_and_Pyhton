@@ -1,8 +1,6 @@
 import cocotb
-from cocotb.clock import Clock
 from cocotb.triggers import Timer
 from model.gates_model import gates
-from cocotb.triggers import RisingEdge, FallingEdge, ClockCycles
 import random
 
 @cocotb.test()

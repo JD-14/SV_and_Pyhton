@@ -8,54 +8,54 @@
 :vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
 :vpi_module "/usr/local/lib/ivl/va_math.vpi";
 :vpi_module "/usr/local/lib/ivl/v2009.vpi";
-S_0x55e5a490bd90 .scope package, "$unit" "$unit" 2 1;
+S_0x555ea2a2ed90 .scope package, "$unit" "$unit" 2 1;
  .timescale 0 0;
-S_0x55e5a490bf20 .scope module, "sillyfunction" "sillyfunction" 3 2;
+S_0x555ea2a2ef20 .scope module, "sillyfunction" "sillyfunction" 3 4;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "a";
     .port_info 1 /INPUT 1 "b";
     .port_info 2 /INPUT 1 "c";
     .port_info 3 /OUTPUT 1 "y";
-o0x7fef1f0b9288 .functor BUFZ 1, C4<z>; HiZ drive
-L_0x55e5a4957e80 .functor NOT 1, o0x7fef1f0b9288, C4<0>, C4<0>, C4<0>;
-o0x7fef1f0b92b8 .functor BUFZ 1, C4<z>; HiZ drive
-L_0x55e5a4957f40 .functor NOT 1, o0x7fef1f0b92b8, C4<0>, C4<0>, C4<0>;
-L_0x55e5a4958010 .functor AND 1, L_0x55e5a4957e80, L_0x55e5a4957f40, C4<1>, C4<1>;
-o0x7fef1f0b92e8 .functor BUFZ 1, C4<z>; HiZ drive
-L_0x55e5a4958100 .functor NOT 1, o0x7fef1f0b92e8, C4<0>, C4<0>, C4<0>;
-L_0x55e5a49581a0 .functor AND 1, L_0x55e5a4958010, L_0x55e5a4958100, C4<1>, C4<1>;
-L_0x55e5a49582e0 .functor NOT 1, o0x7fef1f0b92b8, C4<0>, C4<0>, C4<0>;
-L_0x55e5a49583e0 .functor AND 1, o0x7fef1f0b9288, L_0x55e5a49582e0, C4<1>, C4<1>;
-L_0x55e5a49584f0 .functor NOT 1, o0x7fef1f0b92e8, C4<0>, C4<0>, C4<0>;
-L_0x55e5a4958600 .functor AND 1, L_0x55e5a49583e0, L_0x55e5a49584f0, C4<1>, C4<1>;
-L_0x55e5a4958710 .functor OR 1, L_0x55e5a49581a0, L_0x55e5a4958600, C4<0>, C4<0>;
-L_0x55e5a4958880 .functor NOT 1, o0x7fef1f0b92b8, C4<0>, C4<0>, C4<0>;
-L_0x55e5a49588f0 .functor AND 1, o0x7fef1f0b9288, L_0x55e5a4958880, C4<1>, C4<1>;
-L_0x55e5a49589d0 .functor AND 1, L_0x55e5a49588f0, o0x7fef1f0b92e8, C4<1>, C4<1>;
-L_0x55e5a4958a90 .functor OR 1, L_0x55e5a4958710, L_0x55e5a49589d0, C4<0>, C4<0>;
-v0x55e5a4944f70_0 .net *"_ivl_0", 0 0, L_0x55e5a4957e80;  1 drivers
-v0x55e5a49570a0_0 .net *"_ivl_10", 0 0, L_0x55e5a49582e0;  1 drivers
-v0x55e5a4957180_0 .net *"_ivl_12", 0 0, L_0x55e5a49583e0;  1 drivers
-v0x55e5a4957240_0 .net *"_ivl_14", 0 0, L_0x55e5a49584f0;  1 drivers
-v0x55e5a4957320_0 .net *"_ivl_16", 0 0, L_0x55e5a4958600;  1 drivers
-v0x55e5a4957400_0 .net *"_ivl_18", 0 0, L_0x55e5a4958710;  1 drivers
-v0x55e5a49574e0_0 .net *"_ivl_2", 0 0, L_0x55e5a4957f40;  1 drivers
-v0x55e5a49575c0_0 .net *"_ivl_20", 0 0, L_0x55e5a4958880;  1 drivers
-v0x55e5a49576a0_0 .net *"_ivl_22", 0 0, L_0x55e5a49588f0;  1 drivers
-v0x55e5a4957780_0 .net *"_ivl_24", 0 0, L_0x55e5a49589d0;  1 drivers
-v0x55e5a4957860_0 .net *"_ivl_4", 0 0, L_0x55e5a4958010;  1 drivers
-v0x55e5a4957940_0 .net *"_ivl_6", 0 0, L_0x55e5a4958100;  1 drivers
-v0x55e5a4957a20_0 .net *"_ivl_8", 0 0, L_0x55e5a49581a0;  1 drivers
-v0x55e5a4957b00_0 .net "a", 0 0, o0x7fef1f0b9288;  0 drivers
-v0x55e5a4957bc0_0 .net "b", 0 0, o0x7fef1f0b92b8;  0 drivers
-v0x55e5a4957c80_0 .net "c", 0 0, o0x7fef1f0b92e8;  0 drivers
-v0x55e5a4957d40_0 .net "y", 0 0, L_0x55e5a4958a90;  1 drivers
-S_0x55e5a4944de0 .scope module, "dump" "dump" 4 1;
+o0x7f6c2de59288 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x555ea2a7ae80 .functor NOT 1, o0x7f6c2de59288, C4<0>, C4<0>, C4<0>;
+o0x7f6c2de592b8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x555ea2a7af40 .functor NOT 1, o0x7f6c2de592b8, C4<0>, C4<0>, C4<0>;
+L_0x555ea2a7b010 .functor AND 1, L_0x555ea2a7ae80, L_0x555ea2a7af40, C4<1>, C4<1>;
+o0x7f6c2de592e8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x555ea2a7b100 .functor NOT 1, o0x7f6c2de592e8, C4<0>, C4<0>, C4<0>;
+L_0x555ea2a7b1a0 .functor AND 1, L_0x555ea2a7b010, L_0x555ea2a7b100, C4<1>, C4<1>;
+L_0x555ea2a7b2e0 .functor NOT 1, o0x7f6c2de592b8, C4<0>, C4<0>, C4<0>;
+L_0x555ea2a7b3e0 .functor AND 1, o0x7f6c2de59288, L_0x555ea2a7b2e0, C4<1>, C4<1>;
+L_0x555ea2a7b4f0 .functor NOT 1, o0x7f6c2de592e8, C4<0>, C4<0>, C4<0>;
+L_0x555ea2a7b600 .functor AND 1, L_0x555ea2a7b3e0, L_0x555ea2a7b4f0, C4<1>, C4<1>;
+L_0x555ea2a7b710 .functor OR 1, L_0x555ea2a7b1a0, L_0x555ea2a7b600, C4<0>, C4<0>;
+L_0x555ea2a7b880 .functor NOT 1, o0x7f6c2de592b8, C4<0>, C4<0>, C4<0>;
+L_0x555ea2a7b8f0 .functor AND 1, o0x7f6c2de59288, L_0x555ea2a7b880, C4<1>, C4<1>;
+L_0x555ea2a7b9d0 .functor AND 1, L_0x555ea2a7b8f0, o0x7f6c2de592e8, C4<1>, C4<1>;
+L_0x555ea2a7ba90 .functor OR 1, L_0x555ea2a7b710, L_0x555ea2a7b9d0, C4<0>, C4<0>;
+v0x555ea2a67f70_0 .net *"_ivl_0", 0 0, L_0x555ea2a7ae80;  1 drivers
+v0x555ea2a7a0a0_0 .net *"_ivl_10", 0 0, L_0x555ea2a7b2e0;  1 drivers
+v0x555ea2a7a180_0 .net *"_ivl_12", 0 0, L_0x555ea2a7b3e0;  1 drivers
+v0x555ea2a7a240_0 .net *"_ivl_14", 0 0, L_0x555ea2a7b4f0;  1 drivers
+v0x555ea2a7a320_0 .net *"_ivl_16", 0 0, L_0x555ea2a7b600;  1 drivers
+v0x555ea2a7a400_0 .net *"_ivl_18", 0 0, L_0x555ea2a7b710;  1 drivers
+v0x555ea2a7a4e0_0 .net *"_ivl_2", 0 0, L_0x555ea2a7af40;  1 drivers
+v0x555ea2a7a5c0_0 .net *"_ivl_20", 0 0, L_0x555ea2a7b880;  1 drivers
+v0x555ea2a7a6a0_0 .net *"_ivl_22", 0 0, L_0x555ea2a7b8f0;  1 drivers
+v0x555ea2a7a780_0 .net *"_ivl_24", 0 0, L_0x555ea2a7b9d0;  1 drivers
+v0x555ea2a7a860_0 .net *"_ivl_4", 0 0, L_0x555ea2a7b010;  1 drivers
+v0x555ea2a7a940_0 .net *"_ivl_6", 0 0, L_0x555ea2a7b100;  1 drivers
+v0x555ea2a7aa20_0 .net *"_ivl_8", 0 0, L_0x555ea2a7b1a0;  1 drivers
+v0x555ea2a7ab00_0 .net "a", 0 0, o0x7f6c2de59288;  0 drivers
+v0x555ea2a7abc0_0 .net "b", 0 0, o0x7f6c2de592b8;  0 drivers
+v0x555ea2a7ac80_0 .net "c", 0 0, o0x7f6c2de592e8;  0 drivers
+v0x555ea2a7ad40_0 .net "y", 0 0, L_0x555ea2a7ba90;  1 drivers
+S_0x555ea2a67de0 .scope module, "dump" "dump" 4 1;
  .timescale -9 -12;
-    .scope S_0x55e5a4944de0;
+    .scope S_0x555ea2a67de0;
 T_0 ;
     %vpi_call/w 4 3 "$dumpfile", "sillyfunction.vcd" {0 0 0};
-    %vpi_call/w 4 4 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55e5a490bf20 {0 0 0};
+    %vpi_call/w 4 4 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x555ea2a2ef20 {0 0 0};
     %delay 1000, 0;
     %end;
     .thread T_0;

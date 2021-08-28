@@ -1,7 +1,7 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1629938510" />
-    <testcase name="gates_constant_tb" classname="test_gates" file="/home/jd14/Desktop/vlsi/vlsi-cad/1_RTL_Design/sysver_work/gates/test/test_gates.py" lineno="8" time="0.006941795349121094" sim_time_ns="2.001" ratio_time="288.2539601593625" />
-    <testcase name="gates_random_tb" classname="test_gates" file="/home/jd14/Desktop/vlsi/vlsi-cad/1_RTL_Design/sysver_work/gates/test/test_gates.py" lineno="30" time="0.008216381072998047" sim_time_ns="40.001000000000005" ratio_time="4868.44507875341" />
+    <property name="random_seed" value="1630179062" />
+    <testcase name="gates_constant_tb" classname="test_gates" file="/home/jd14/Desktop/vlsi/git_test/SV_and_Pyhton/Code/gates/test/test_gates.py" lineno="6" time="0.005603313446044922" sim_time_ns="2.001" ratio_time="357.11013122287466" />
+    <testcase name="gates_random_tb" classname="test_gates" file="/home/jd14/Desktop/vlsi/git_test/SV_and_Pyhton/Code/gates/test/test_gates.py" lineno="28" time="0.014452219009399414" sim_time_ns="40.001000000000005" ratio_time="2767.8102562647446" />
   </testsuite>
 </testsuites>
