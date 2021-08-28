@@ -59,6 +59,53 @@ A testbench is a module used to test another module. The tested module is called
 > ![img](/Images/img7.png)
 
 
+# Testbench with cocotb
+
+The cocotb library allows you to create testbenches using python instead of SystemVerilog (SV). The python code below is the equivalent of the SystemVerilog testbench presented earlier.  The first line imports the cocotb library.  The second line imports the timer that is used to delay the input signals. This is the equivalent of the “#” in SV. The third line imports the hardware design of the 3-input AND gate.  Line five shows the decorator from cocotb used to indicate the beginning of the simulation.  Line six defines the beginning of the test to be implemented. This is equivalent to the “ANDgate_testbench” module (line 2) in SV.  Moreover, line six uses the argument “dut” to indicate the “ANDgate” module is the Device Under Test (dut).  Line seven, defines the input variables and its valuesLine eight, shows the input values to be feed to the device (AND gate). The “dut.a” indicates the port “a” of the device, and “<=” serves as the assignment operator that indicates the where the input value is to be feed. Line nine, sets a timer that indicates how long the input signals will last. this case the inputs values last for 10ns.  From this point the same techniques are applied to the rest of the inputs.
+
+```python
+import cocotb
+from cocotb.triggers import Timer
+from model.gates_model import ANDgate
+
+@cocotb.test()
+async def ANDgate_testbench(dut):
+    a, b, c = 0, 0, 0
+    dut.a <= a, dut.b <= b, dut.c <= c
+    await Timer(10, units='ns')
+
+    a, b, c = 0, 0, 1
+    dut.a <= a, dut.b <= b, dut.c <= c
+    await Timer(10, units='ns')
+
+    a, b, c = 0, 1, 0
+    dut.a <= a, dut.b <= b, dut.c <= c
+    await Timer(10, units='ns')
+
+    a, b, c = 0, 1, 1
+    dut.a <= a, dut.b <= b, dut.c <= c
+    await Timer(10, units='ns')
+
+    a, b, c = 1, 0, 0
+    dut.a <= a, dut.b <= b, dut.c <= c
+    await Timer(10, units='ns')
+
+    a, b, c = 1, 0, 1
+    dut.a <= a, dut.b <= b, dut.c <= c
+    await Timer(10, units='ns')
+
+    a, b, c = 1, 1, 0
+    dut.a <= a, dut.b <= b, dut.c <= c
+    await Timer(10, units='ns')
+
+    a, b, c = 1, 1, 1
+    dut.a <= a; dut.b <= b, dut.c <= c
+    await Timer(10, units='ns')
+```
+
+
+
+
 # References
   - cocotb:
       - [Documentation](https://docs.cocotb.org/en/stable/index.html)
