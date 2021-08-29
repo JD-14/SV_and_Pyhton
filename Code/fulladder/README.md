@@ -1,6 +1,6 @@
 # Full Adder
 
-This example covers the design of a full adder using the functions (sum & carry out) ***S = A ^ B ^ Cin***, and ***Cout = AB + ACin + BCin***. Notice that the ^ symbol represents an XOR operation. Moreover, two intermediate signals (P & G) are implemented to simplify the previous functions. These signals are ***P = A ^ B***, and ***G = AB***. As a result, the simplified functions are ***S = P ^ Cin***, and ***Cout = G + Pcin***.
+This example covers the design of a full adder using the functions (sum & carry out) ***S = A ^ B ^ Cin***, and ***Cout = AB + ACin + BCin***. Note that the ^ symbol represents an XOR operation. Moreover, two intermediate signals (P & G) are implemented to simplify the previous functions. These signals are ***P = A ^ B***, and ***G = AB***. As a result, the simplified functions are ***S = P ^ Cin***, and ***Cout = G + Pcin***.
 
 ## ystemVerilog:
 
