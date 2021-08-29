@@ -1,11 +1,14 @@
 # History FSM (Finite State Machine)
 
+This example covers the design for a ***finite state machine***. To be more specific, the design implemented is a ***Mealy machine***. This means that the output is a function of the current state and inputs. The image below shows the transition diagram of the Mealy machine implemented in this example. This machine has an input **a** and two outputs, **x** and **y**.  Output **x** is true when the input is the same now as it was in the last cycle. Output **y** is true when the input is the same now as it was for the past two cycles. If the machine is **reset**, the cycle will start from **0**.
+
 ![img](/Images/his_dia.png)
 
 ## SystemVerilog:
 
-```systemverilog
+In this module, the ***typedef*** statement defines ***statetype*** as a 3-bit logic value with one of four possibilities: **S0**, **S1**, **S2**, **S3**, or **S4**. The ***enum*** (enumerate) encodings default to numerical order: **S0=000**, **S1=001**, **S2=010**, **S3=011**, or **S4=100**. Next, the **state** and **nextstate** are declared as **statetype** signals.  To get the **nextstate** of the current state, a ***case*** statement is used to define the state transition table.
 
+```systemverilog
 module historyFSM(input logic clk,
                   input logic reset,
                   input logic a,
@@ -45,6 +48,8 @@ endmodule
 ```
 
 ## Python:
+
+This ***historyFSM*** function replicates the behavior of the SV code. This function uses multiple global variables to keep track of previous values.
 
 ```python
 state, nextstate = 0, 0
@@ -124,6 +129,8 @@ def historyFSM(rst, a,):
 
 
 ## Python Testbench:
+
+This testbench follows the same procedure explained in the first example. However, a ***print*** function was implemented to track all the inputs and their respective outputs.
 
 ```python
 import cocotb
