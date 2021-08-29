@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1630092176" />
-    <testcase name="flopr2_random_tb" classname="test_flopr2" file="/home/jd14/Desktop/vlsi/git_test/SV_and_Pyhton/Code/flopr/asynchronous/test/test_flopr2.py" lineno="8" time="0.013870954513549805" sim_time_ns="195.001" ratio_time="14058.225034875128" />
+    <property name="random_seed" value="1630203019" />
+    <testcase name="flopr2_random_tb" classname="test_flopr2" file="/home/jd14/Desktop/vlsi/git_test/SV_and_Pyhton/Code/flopr/asynchronous/test/test_flopr2.py" lineno="7" time="0.018893003463745117" sim_time_ns="195.001" ratio_time="10321.334052269602" />
   </testsuite>
 </testsuites>

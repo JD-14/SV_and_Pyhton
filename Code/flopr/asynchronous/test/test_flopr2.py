@@ -1,6 +1,5 @@
 import cocotb
 from cocotb.clock import Clock
-from cocotb.triggers import Timer
 from model.flopr2_model import flopr2
 from cocotb.triggers import RisingEdge, FallingEdge, ClockCycles, Edge
 import random

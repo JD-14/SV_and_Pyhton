@@ -1,7 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1630179175" />
-    <testcase name="fulladder_constant_tb" classname="test_fulladder" file="/home/jd14/Desktop/vlsi/git_test/SV_and_Pyhton/Code/fulladder/test/test_fulladder.py" lineno="8" time="0.0014417171478271484" sim_time_ns="2.001" ratio_time="1387.9282791466842" />
-    <testcase name="fulladder_tb" classname="test_fulladder" file="/home/jd14/Desktop/vlsi/git_test/SV_and_Pyhton/Code/fulladder/test/test_fulladder.py" lineno="27" time="0.006770610809326172" sim_time_ns="40.001000000000005" ratio_time="5908.034168040003" />
-  </testsuite>
-</testsuites>

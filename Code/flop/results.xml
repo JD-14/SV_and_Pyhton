@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1629942701" />
-    <testcase name="flop_tb" classname="test_flop" file="/home/jd14/Desktop/vlsi/vlsi-cad/1_RTL_Design/sysver_work/flop/test/test_flop.py" lineno="8" time="0.009074926376342773" sim_time_ns="195.001" ratio_time="21487.887825552374" />
+    <property name="random_seed" value="1630202853" />
+    <testcase name="flop_random_tb" classname="test_flop" file="/home/jd14/Desktop/vlsi/git_test/SV_and_Pyhton/Code/flop/test/test_flop.py" lineno="7" time="0.012541055679321289" sim_time_ns="195.001" ratio_time="15549.009986578203" />
   </testsuite>
 </testsuites>

@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1629923527" />
-    <testcase name="fulladder2_tb" classname="test_fulladder2" file="/home/jd14/Desktop/vlsi/vlsi-cad/1_RTL_Design/sysver_work/fulladder2/test/test_fulladder2.py" lineno="10" time="0.013191938400268555" sim_time_ns="100.001" ratio_time="7580.462928629521" />
+    <property name="random_seed" value="1630203303" />
+    <testcase name="fulladder2_tb" classname="test_fulladder2" file="/home/jd14/Desktop/vlsi/git_test/SV_and_Pyhton/Code/fulladder2/test/test_fulladder2.py" lineno="7" time="0.01987290382385254" sim_time_ns="100.001" ratio_time="5032.027573140739" />
   </testsuite>
 </testsuites>

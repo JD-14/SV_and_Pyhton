@@ -1,9 +1,6 @@
 import cocotb
-from cocotb.clock import Clock
 from cocotb.triggers import Timer
 from model.fulladder2_model import fulladder2
-from cocotb.triggers import RisingEdge, FallingEdge, ClockCycles
-from cocotb.binary import  BinaryValue
 import random
 
 
